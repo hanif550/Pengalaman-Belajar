@@ -1,0 +1,242 @@
+body{
+	margin:0;
+	padding:20px;
+	font-family: sans-serif;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+.table{
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.table td,.table th{
+  padding:12px 15px;
+  border:1px solid #ddd;
+  text-align: center;
+  font-size:16px;
+}
+
+.table th{
+	background-color: #34B3F1;
+	color:#ffffff;
+}
+
+.table tbody tr:nth-child(even){
+	background-color: #f5f5f5;
+}
+
+/*responsive*/
+
+@media(max-width: 500px){
+	.table thead{
+		display: none;
+	}
+
+	.table, .table tbody, .table tr, .table td{
+		display: block;
+		width: 100%;
+	}
+	.table tr{
+		margin-bottom:15px;
+	}
+	.table td{
+		text-align: right;
+		padding-left: 50%;
+		text-align: right;
+		position: relative;
+	}
+	.table td::before{
+		content: attr(data-label);
+		position: absolute;
+		left:0;
+		width: 50%;
+		padding-left:15px;
+		font-size:15px;
+		font-weight: bold;
+		text-align: left;
+	}
+}
+/* Gambar */
+.img-keranjang {
+  width: 120px;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root{
+  --black:#2c2c54;
+  --orange:#ff9f1a;
+}
+
+*{
+  font-family: 'Nunito', sans-serif;
+  margin: 0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top:6rem;
+  scroll-behavior: smooth;
+}
+
+section{
+  padding:2rem 9%;
+}
+
+.heading{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 4rem;
+  color:var(--black);
+  padding:1rem;
+}
+
+.heading span{
+  text-transform: uppercase;
+  color:var(--orange);
+}
+
+.btn{
+  display: inline-block;
+  margin-top: 1rem;
+  border-radius: .5rem;
+  border:.2rem solid var(--black);
+  font-weight: bolder;
+  font-size: 1.7rem;
+  color:var(--black);
+  cursor: pointer;
+  background:#fff;
+  padding:.8rem 1rem;
+}
+
+.btn:hover{
+  background:var(--orange);
+  color:#fff;
+}
+
+header{
+  position: auto;
+  top:0; left:0; right:0;
+  z-index: 1000;
+  background:#fff;
+  padding:2rem 9%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+header .logo{
+  font-size: 2.5rem;
+  color:var(--black);
+}
+
+header .navbar a{
+  font-size: 1.7rem;
+  color:var(--black);
+  margin:0 1rem;
+}
+
+header .navbar a:hover{
+  color:var(--orange);
+}
+
+header .icons a{
+  font-size: 2.5rem;
+  color:var(--black);
+  margin-left:1.5rem;
+}
+
+header .icons a:hover{
+  color:var(--orange);
+}
+
+#menu-bar{
+  font-size: 2.5rem;
+  padding: .5rem 1.5rem;
+  border:.1rem solid var(--black);
+  color:var(--black);
+  border-radius: .3rem;
+  cursor: pointer;
+  display: none;
+}
+
+/*box-cotaniner*/
+
+.service .box-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap:1.5rem;
+  background:#f9f9f9;
+  border:.1rem solid rgba(0,0,0,.1);
+  border-radius: .5rem;
+  padding:2rem;
+}
+
+.service .box-container .box{
+  text-align: center;
+  flex:1 1 30rem
+}
+
+.service .box-container .box i{
+  font-size: 4rem;
+  color:var(--orange);
+}
+
+.service .box-container .box h3{
+  font-size: 2rem;
+  color:var(--black);
+  padding-top: 1rem;
+}
+
+.service .box-container .box p{
+  font-size: 1.5rem;
+  color:#666;
+  padding:1rem 0;
+}
+
+/*container*/
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  gap:1.5rem;
+  background:#f9f9f9;
+  border:.1rem solid rgba(0,0,0,.1);
+  border-radius: .5rem;
+  padding:2rem;
+}
+
+.container .box{
+  text-align: center;
+  flex:1 1 30rem
+}
+
+.container .box i{
+  font-size: 4rem;
+  color:var(--orange);
+}
+
+.container .box h3{
+  font-size: 2rem;
+  color:var(--black);
+  padding-top: 1rem;
+}
+
+.container .box p{
+  font-size: 1.5rem;
+  color:#666;
+  padding:1rem 0;
+}
+
